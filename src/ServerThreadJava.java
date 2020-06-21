@@ -20,7 +20,7 @@ public class ServerThreadJava implements Runnable {
         this.client=client;
         this.server=server;
         this.id=count;
-        System.out.println("Connection "+id+"established with client "+client);
+        System.out.println("Connection "+id+" established with client "+client);
 
         cin=new BufferedReader(new InputStreamReader(client.getInputStream()));
         cout=new PrintStream(client.getOutputStream());

@@ -14,9 +14,9 @@ public class Client {
             String host;
             Integer port;
             Scanner sc = new Scanner(System.in);
-            System.out.println("Insert host:\n");
+            System.out.println("Insert host name: \n");
             host = sc.nextLine();
-            System.out.println("Insert port:\n");
+            System.out.println("Insert port: \n");
             port = sc.nextInt();
             Socket sk = new Socket(host,port);
             BufferedReader sin = new BufferedReader(new InputStreamReader(sk.getInputStream()));

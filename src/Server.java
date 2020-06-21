@@ -21,8 +21,8 @@ public class Server {
     public void startServer(int serverType) throws IOException {
 
         server = new ServerSocket(this.port);
-        System.out.println("Server Booted");
-        System.out.println("Any client can stop the server by sending -1");
+        System.out.println("Server Initialized");
+        System.out.println("Any client can stop the server by sending X");
         while(true)
         {
             client=server.accept();

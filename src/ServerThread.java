@@ -19,7 +19,7 @@ public class ServerThread implements Runnable {
         this.client=client;
         this.server=server;
         this.id=count;
-        System.out.println("Connection "+id+"established with client "+client);
+        System.out.println("Connection "+id+" established with client "+client);
         cin=new BufferedReader(new InputStreamReader(client.getInputStream()));
         cout=new PrintStream(client.getOutputStream());
 
@@ -42,7 +42,7 @@ public class ServerThread implements Runnable {
                     System.out.println("Connection ended by client");
                     break;
                 }
-                System.out.println("Message to Client" + id + ":");
+                System.out.println("Message to Client" + id + ": ");
                 s = sc.nextLine();
                 if (s.equals("x"))
                 {
